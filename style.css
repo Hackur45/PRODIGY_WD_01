@@ -160,6 +160,34 @@ footer {
     width: 100px;
 }
 
+.home:hover{
+    color: rgb(161, 223, 218);
+    transition: font 0.3s;
+    font-size: 20px;
+
+}
+.blog:hover{
+    color: rgb(161, 223, 218);
+    transition: font 0.3s;
+    font-size: 20px;
+}
+.contact:hover{
+    color: rgb(161, 223, 218);
+    transition: font 0.3s;
+    font-size: 20px;
+}
+.repo:hover{
+    color: rgb(161, 223, 218);
+    transition: font 0.3s;
+    font-size: 20px;
+}
+.about:hover{
+    color: rgb(161, 223, 218);
+    transition: font 0.3s;
+    font-size: 20px;
+}
+
+
 
 
 
