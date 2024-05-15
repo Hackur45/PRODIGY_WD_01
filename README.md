@@ -1,4 +1,4 @@
-# Prodigy Infotech - Responsive Navbar
+# Prodigy Infotech - Responsive Landing Page
 
 This project is the first task of the Prodigy Infotech internship, focusing on creating a responsive navbar with dynamic color changing functionality.
 
@@ -12,6 +12,7 @@ The HTML file (`index.html`) consists of the following key elements:
 - **Sidebar Dropdown**: Dropdown menu for smaller screens, initially hidden and revealed by clicking the sidebar button.
 - **Main Content**: Heading section indicating the task title.
 - **Color Picker**: Allows users to choose a color for the navbar.
+- **navigating anchor tags**: Allows us to navigate through out the page
 - **Footer**: Includes a message encouraging users to check out the repository and a "Happy Coding" note.
 
 ### CSS Styling
