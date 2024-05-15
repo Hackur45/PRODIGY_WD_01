@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tac+One&family=Workbench&display=swap');
 
+
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -49,6 +53,7 @@ body{
     list-style-type: none;
     font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: large;
 }
 
 .navbar-items-style {
@@ -92,24 +97,7 @@ opacity: 0; /* Start with opacity 0 */
     visibility: hidden;
 }
  
-@media only screen and (max-width: 784px) {
-    .navbar-items-hiden{
-        display: none;
-        visibility: hidden;
-        font-size: 0px;
-    }
-    .sidebar-button{
-        visibility: visible;
-        padding-right: 3vh;
-    }
 
-    a{
-        color: black;
-    }
-    #navbar :nth-child(1) > h1{
-       font-size: 5vw 
-    }
-}
 
 .middleSeperation{
     height: 40vh;
@@ -138,6 +126,7 @@ opacity: 0; /* Start with opacity 0 */
     color: rgb(0, 0, 0);
     font-family: "Poppins", sans-serif;
     padding-top: 40px;
+    padding-bottom: 20px;
   font-weight: 600;
 }
 
@@ -146,7 +135,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
     font-family: "Poppins", sans-serif;
@@ -162,32 +150,270 @@ footer {
 
 .home:hover{
     color: rgb(161, 223, 218);
-    transition: font 0.3s;
-    font-size: 20px;
-
 }
 .blog:hover{
     color: rgb(161, 223, 218);
-    transition: font 0.3s;
-    font-size: 20px;
 }
 .contact:hover{
     color: rgb(161, 223, 218);
-    transition: font 0.3s;
-    font-size: 20px;
 }
 .repo:hover{
     color: rgb(161, 223, 218);
-    transition: font 0.3s;
-    font-size: 20px;
 }
 .about:hover{
     color: rgb(161, 223, 218);
-    transition: font 0.3s;
-    font-size: 20px;
 }
 
 
+#home{
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10vh;
+    border-bottom: 3px solid black;
+}
+
+.home-box{
+    height:50vh;
+    width: 50vh;
+    background-color: rgba(178, 81, 156, 0.782);
+    box-shadow: rgba(178, 81, 156, 0.782);
+}
+
+#homeheading{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size:x-large;
+    font-weight: bolder;
+    font-family: 'poppins',sans-serif;
+}
+#item-4{
+    grid-column: 2;
+}
+
+#blog{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 3px solid black;
+}
+#blog-content{
+    width: 500px;
+    height: 100px;
+    font-family: 'Poppins';
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog-image{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 400px;
+    width: 200px;
+}
+#blog-image > img{
+    height: 300px;
+    width: 200px;
+}
+
+#blogheading{
+    padding-top: 20px;
+    font-size: x-large;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bolder;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#main{
+    border-top: 3px solid black;
+}
+#about{
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 345px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "poppins";
+    font-size: larger;
+    font-weight: bold;
+}
+#about-heading{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "poppins",sans-serif;
+    font-weight: bolder;
+    font-size: larger   ;
+}
+#first-about{
+    border-right: 2px solid black;
+    padding-left: 10px;
+}
+#second-about{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media only screen and (max-width: 784px) {
+    .navbar-items-hiden{
+        display: none;
+        visibility: hidden;
+        font-size: 0px;
+        width: 0%;
+    }
+    .navbar-items-style{
+        width: 100px;
+    }
+    .sidebar-button{
+        visibility: visible;
+        padding-right: 3vh;
+    }
+
+    a{
+        color: black;
+    }
+    #navbar :nth-child(1) > h1{
+       font-size: 5vw 
+    }
+
+    #home{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-box{
+        height:200px;
+        width: 300px;
+    }
+
+    #blog{
+        display: flex;
+        padding-top: 3px;
+        height: 500px;
+        flex-direction: column;
+    }
+
+    #blog-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 100px;
+    }
+    #blog-content{
+        text-align:center;
+        width: 400px;
+        font-family: 'Poppins',sans-serif;
+        font-size: larger;
+        font-weight: bold;
+    }
+    #blogheading{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    #first-about{
+        padding-right: 10px;
+    }
+    #about{
+        height: 100%;
+    }
+}
+
+#item-1{
+    transition: transform 0.3s, z-index 0.3s;
+}
+
+#item-1:hover{
+    z-index: 10;
+    transform: scale(1.1);
+    box-shadow: rgb(118, 167, 54);
+    transition: transform 0.3s , z-index 0.4s 0.4s;
+}
+#item-2{
+    transition: transform 0.3s, z-index 0.3s;
+}
+
+#item-2:hover{
+    z-index: 10;
+    transform: scale(1.1);
+    box-shadow: rgb(118, 167, 54);
+    transition: transform 0.3s , z-index 0.4s 0.4s;
+}
+
+#item-3{
+    transition: transform 0.3s, z-index 0.3s;
+}
+
+#item-3:hover{
+    z-index: 10;
+    transform: scale(1.1);
+    box-shadow: rgb(118, 167, 54);
+    transition: transform 0.3s , z-index 0.4s 0.4s;
+}
+
+#item-4{
+    transition: transform 0.3s, z-index 0.3s;
+}
+
+#item-4:hover{
+    z-index: 10;
+    transform: scale(1.1);
+    box-shadow: rgb(118, 167, 54);
+    transition: transform 0.3s , z-index 0.4s 0.4s;
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: "Poppins",sans-serif;
+    border-top: 3px solid black;
+}
+#first-contact{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:200px;
+    font-weight: bold;
+}
+
+#second-contact{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:200px;
+    font-weight: bold;
+}
+
+#contact-heading{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "Poppins",sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+}
 
 
 
